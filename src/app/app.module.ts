@@ -18,7 +18,12 @@ const apiRoutes: Routes = [
 {
   path: 'favorite',
   component: FavoriteWeatherComponent
+},
+{
+  path: 'search',
+  component: WeatherSearchComponent
 }
+
 ];
 
 @NgModule({

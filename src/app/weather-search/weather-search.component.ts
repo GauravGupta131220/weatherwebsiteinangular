@@ -10,11 +10,11 @@ export class WeatherSearchComponent implements OnInit {
 
   public weathers: any;
 
-  list:any = [];
+  // list:any = [];
 
   @Output() weatherList = new EventEmitter<any>();
 
-  @Output() favoriteList = new EventEmitter<any>();
+  // @Output() favoriteList = new EventEmitter<any>();
 
   constructor(private weatherService:WeatherService) { }
 
@@ -28,14 +28,14 @@ export class WeatherSearchComponent implements OnInit {
   		})
   }
 
-  //show favorite list
-  favoriteWeather(){
-      this.weatherService.showFavList()
-        .subscribe((data)=>{
-          this.list=data;
-          this.favoriteList.emit(this.list);
-        })
-  }
+  // //show favorite list
+  // favoriteWeather(){
+  //     this.weatherService.showFavList()
+  //       .subscribe((data)=>{
+  //         this.list=data;
+  //         this.favoriteList.emit(this.list);
+  //       })
+  // }
 
 
 

@@ -9,7 +9,7 @@ export class WeatherComponent implements OnInit {
 
   public weatherList;	
 
-  public favoriteList;
+  // public favoriteList;
 
   constructor() { }
 
@@ -19,9 +19,9 @@ export class WeatherComponent implements OnInit {
   }
 
 
-  showFavoriteList(event){
-    this.favoriteList=event;
-  }
+  // showFavoriteList(event){
+  //   this.favoriteList=event;
+  // }
 
   ngOnInit() {
   }
