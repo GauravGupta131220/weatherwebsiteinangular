@@ -1,0 +1,15 @@
+<div>
+<ul>
+	<li *ngFor="let weather of weatherList.forecast.forecastday">
+
+		<label>CITY:</label>{{weatherList.location.name}}
+		<label>DATE:</label>{{weather.date}}
+		<label>MAX TEMPERATURE:</label>{{weather.day.maxtemp_c}}
+		<label>MIN TEMPERATURE:</label>{{weather.day.mintemp_c}}
+
+<button  class="btn btn-outline-success my-2 my-sm-0" type="button"(click)="saveData(weather)">Add to Favourites</button>
+		
+	</li>
+</ul>
+</div>
+
