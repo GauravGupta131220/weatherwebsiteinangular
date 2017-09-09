@@ -1,0 +1,9 @@
+/*<div *ngFor="let lists of list">
+
+    <li>{{lists._id}}</li> 
+    <li>{{lists.date}}</li>
+    <li>{{lists.maxtemp}}</li>
+    <li>{{lists.mintemp}}</li>
+
+
+</div>*/

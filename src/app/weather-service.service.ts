@@ -25,4 +25,11 @@ constructor(private http : Http) { }
      .map((res: Response)=>res.json())
  }
 
+  //to show favorite weather list
+  showFavList(){
+     var expressApi='http://localhost:3001/index/home'
+     return this.http.get(expressApi)
+     .map((res: Response)=>res.json())
+   }
+
 }

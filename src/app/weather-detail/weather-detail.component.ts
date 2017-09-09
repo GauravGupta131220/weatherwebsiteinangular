@@ -11,6 +11,12 @@ export class WeatherDetailComponent implements OnInit {
 
   @Input('weatherList') weatherList:any;
 
+  @Input('favoriteList') favoriteList:any;
+
+  
+
+
+
   constructor(private weatherService:WeatherService) { }
 
   data: any={};

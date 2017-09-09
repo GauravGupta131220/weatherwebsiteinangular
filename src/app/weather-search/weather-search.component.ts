@@ -10,7 +10,11 @@ export class WeatherSearchComponent implements OnInit {
 
   public weathers: any;
 
+  list:any = [];
+
   @Output() weatherList = new EventEmitter<any>();
+
+  @Output() favoriteList = new EventEmitter<any>();
 
   constructor(private weatherService:WeatherService) { }
 
@@ -23,6 +27,17 @@ export class WeatherSearchComponent implements OnInit {
       			this.weatherList.emit(this.weathers);
   		})
   }
+
+  //show favorite list
+  favoriteWeather(){
+      this.weatherService.showFavList()
+        .subscribe((data)=>{
+          this.list=data;
+          this.favoriteList.emit(this.list);
+        })
+  }
+
+
 
   ngOnInit() {
 
