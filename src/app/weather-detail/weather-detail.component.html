@@ -1,4 +1,4 @@
-<div>
+<!-- <div>
 <ul>
 	<li *ngFor="let weather of weatherList.forecast.forecastday">
 
@@ -11,7 +11,39 @@
 		
 	</li>
 </ul>
+</div> -->
+
+
+<!-- CARD -->
+
+<div class="container">
+
+	<div class="card-group">
+			<div class="row">
+			<div class="card-block col-md-4" style="width: 20rem; margin-top: 15px background-color: #e3e3e3" *ngFor="let weather of weatherList.forecast.forecastday">
+			  <img class="image" src="{{weather.day.condition.icon}}" alt="Card image cap">
+			  	<div class="row">
+						  <div class="card-block" >
+						  	
+						
+							  		<h4 class="card-title">{{weatherList.location.name}}</h4><br>
+							  		<!-- <label>CITY:</label>{{weatherList.location.name}} -->
+										<label>DATE:</label>{{weather.date}}<br>
+										<label>MAX TEMPERATURE:</label>{{weather.day.maxtemp_c}}<br>
+										<label>MIN TEMPERATURE:</label>{{weather.day.mintemp_c}}<br>
+										<a href="#" class="btn btn-primary" (click)="saveData(weather)">Add to Favorites</a>							  
+						   						    
+						  </div>
+						<div>  
+			</div>
+	</div>
 </div>
+
+
+
+
+
+
 
 
 

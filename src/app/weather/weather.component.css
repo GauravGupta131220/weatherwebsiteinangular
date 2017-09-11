@@ -1,0 +1,46 @@
+.myNavbar{
+	background-color: #FF8800;
+}
+
+.myJumbotron{
+	margin-top: 15px;
+	background-color: #ffcc80 !important; 
+}
+
+#carouselExampleIndicators{
+	margin-top: 15px;
+}
+
+
+.footer {
+    margin-top: 2rem;
+}
+
+footer {
+    background: #333;
+    color: #eee;
+    font-size: 11px;
+    padding: 20px;
+}
+
+
+ul.noStyle {
+    list-style: none;
+    padding: 0px;
+    font-size: 12px;
+}
+
+.link {
+    line-height: 30px;
+}
+
+.aboutUs p {
+    font-size: 12px;
+}
+
+.cRight h5,
+.aboutUs h5,
+.navigation h5,
+.link h5 {
+    color: orange;
+}

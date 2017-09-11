@@ -1,4 +1,5 @@
 <input type="text" name="weather" [(ngModel)]="weather">
-<button (click)="searchWeather(weather)">Search</button>
-<button [routerLink]="'/favorite'">ShowFavorites</button>
+<button class="btn btn-warning btn-cons" (click)="searchWeather(weather)">Search</button>
+<!-- <button [routerLink]="'/favorite'">ShowFavorites</button> -->
+<button type="button" class="btn btn-success btn-cons" [routerLink]="'/favorite'">ShowFavorites</button>
 

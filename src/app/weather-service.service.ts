@@ -12,7 +12,7 @@ constructor(private http : Http) { }
 
 //Get weather from  api
   getWeather(weather: string) {
-  	return this.http.get('http://api.apixu.com/v1/forecast.json?key=2e3212ea081543c09a6130414170609&q='+weather+'&days=10')
+  	return this.http.get('http://api.apixu.com/v1/forecast.json?key=2e3212ea081543c09a6130414170609&q='+weather+'&days=9')
   	.map(res =>
   		res.json() 		
   	);
