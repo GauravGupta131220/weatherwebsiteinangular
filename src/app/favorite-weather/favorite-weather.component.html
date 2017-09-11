@@ -1,3 +1,4 @@
+<a [routerLink]="'/search'">Seacrh News</a>
 <div>
 <ul>
 	<li *ngFor="let favlist of list">
@@ -8,7 +9,7 @@
 		<label>MAX TEMPERATURE:</label>{{favlist.maxtemp}}
 		<label>MIN TEMPERATURE:</label>{{favlist.mintemp}}
 
-<button  class="btn btn-outline-success my-2 my-sm-0" type="button"(click)="saveData(weather)">Delete</button>
+<button  class="btn btn-outline-success my-2 my-sm-0" type="button" (click)="deleteData(favlist._id)">Delete</button>
 		
 	</li>
 </ul>

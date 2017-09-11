@@ -21,7 +21,7 @@ constructor(private http : Http) { }
   //save data in database
   save(data){
      var expressApi='http://localhost:3001/admin'
-     return this.http.post(expressApi,data)
+     return this.http.post(expressApi,data)  
      .map((res: Response)=>res.json())
  }
 
@@ -31,5 +31,13 @@ constructor(private http : Http) { }
      return this.http.get(expressApi)
      .map((res: Response)=>res.json())
    }
+
+   //to delete the items in favorite list
+   deleteListItem(id){
+       var expressApi='http://localhost:3001/logout/'+id
+       return this.http.delete(expressApi)
+       .map((res: Response)=>res.json())
+   }
+
 
 }

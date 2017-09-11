@@ -20,4 +20,13 @@ export class FavoriteWeatherComponent implements OnInit {
         })
   }
 
+
+    deleteData(id){
+      this.weatherService.deleteListItem(id)
+        .subscribe((data)=>{
+          this.list=data;
+        })
+  }
+
+
 }

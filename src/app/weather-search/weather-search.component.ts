@@ -28,18 +28,7 @@ export class WeatherSearchComponent implements OnInit {
   		})
   }
 
-  // //show favorite list
-  // favoriteWeather(){
-  //     this.weatherService.showFavList()
-  //       .subscribe((data)=>{
-  //         this.list=data;
-  //         this.favoriteList.emit(this.list);
-  //       })
-  // }
-
-
-
-  ngOnInit() {
+   ngOnInit() {
 
       this.weatherService.getWeather('Delhi')
           .subscribe(res=>{
@@ -49,5 +38,14 @@ export class WeatherSearchComponent implements OnInit {
       })
 
   }
+
+  // //show favorite list
+  // favoriteWeather(){
+  //     this.weatherService.showFavList()
+  //       .subscribe((data)=>{
+  //         this.list=data;
+  //         this.favoriteList.emit(this.list);
+  //       })
+  // }
 
 }

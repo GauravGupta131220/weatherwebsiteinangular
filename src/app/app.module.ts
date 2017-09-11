@@ -21,7 +21,12 @@ const apiRoutes: Routes = [
 },
 {
   path: 'search',
-  component: WeatherSearchComponent
+  component: WeatherComponent
+},
+{
+  path: '',
+  redirectTo: '/search',
+  pathMatch: 'full'
 }
 
 ];
